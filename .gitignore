@@ -30,12 +30,17 @@
 *.exe
 *.out
 *.app
-/.vs/math_tool
-/math_tool/x64/Debug
-/math_tool.vcxproj
-/math_tool.vcxproj.filters
-/math_tool.vcxproj.user
-/x64/Debug
+/ *.sln
+/ obj
+/ bin
+/ math_tool.vcxproj.user
+/ math_tool.vcxproj.filters
+/ math_tool.vcxproj
 /.vs
 /Debug
 /math_tool/Debug
+*.vcxproj
+*.filters
+*.user
+/math_tool/x64/Debug
+/x64/Debug
