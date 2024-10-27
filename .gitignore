@@ -36,3 +36,6 @@
 /math_tool.vcxproj.filters
 /math_tool.vcxproj.user
 /x64/Debug
+/.vs
+/Debug
+/math_tool/Debug
