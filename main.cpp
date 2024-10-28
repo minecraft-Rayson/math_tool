@@ -12,7 +12,7 @@ int main()
 		cout << "Please input your choice(1.circumference 0.exit):";     //input choice
 		cin >> index;    //get user input
 		if (index == 0) //exit if
-		{       
+		{
 			break;
 			return 0;
 		}
