@@ -1,9 +1,11 @@
 #include <iostream>
+#include <cmath>
 #include "tools/circumference.h"   //include circumference
 using namespace std;
 int main() 
 {
 	int index;    //set user input 
+	char index_;
 	cout << "Hello, Welcome to use math tool" << endl;    //welcome sentence
 	cout << "Make with zk stdio!" << endl;    //welcome sentence
 	/*=======================================================================*/
@@ -12,7 +14,7 @@ int main()
 		cout << "Please input your choice(1.circumference 0.exit):";     //input choice
 		cin >> index;    //get user input
 		if (index == 0) //exit if
-		{       
+		{
 			break;
 			return 0;
 		}

@@ -44,3 +44,5 @@
 *.user
 /math_tool/x64/Debug
 /x64/Debug
+/Math tool installer
+/math_tool.sln
