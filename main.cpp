@@ -5,7 +5,6 @@ using namespace std;
 int main() 
 {
 	int index;    //set user input 
-	char index_;
 	cout << "Hello, Welcome to use math tool" << endl;    //welcome sentence
 	cout << "Make with zk stdio!" << endl;    //welcome sentence
 	/*=======================================================================*/
