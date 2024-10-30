@@ -10,7 +10,7 @@ int main()
 	/*=======================================================================*/
 	for (;;)    //main loop
 	{
-		cout << "Please input your choice(1.circumference 0.exit):";     //input choice
+		cout << "Please input your choice(1.circumference 2. pi 0.exit):";     //input choice
 		cin >> index;    //get user input
 		if (index == 0) //exit if
 		{
@@ -18,7 +18,7 @@ int main()
 			return 0;
 		}
 		else if (index == 1) //circumference if
-		{     
+		{
 			cout << "Choose 1.radius(r) 2.diameter(d):";
 			cin >> index;
 			if (index == 1)
@@ -35,6 +35,13 @@ int main()
 				cin >> diameter;
 				cout << "The circumference is:" << d(diameter) << endl;
 			}
+		}
+		else if (index == 2)     // pi serch if
+		{
+			double user;
+			cout << "Please input the number:";
+			cin >> user;
+			cout << "The pi is:" << piserch(user) << endl;
 		}
 		else {         //error if
 			cout << "Error!" << endl;

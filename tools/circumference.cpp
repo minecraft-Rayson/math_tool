@@ -8,3 +8,7 @@ double d(double user_input) {
     double circumference = user_input * pi;
     return circumference;
 }
+double piserch(double user_input) {
+    double circumference = user_input * pi;
+    return circumference;
+}
