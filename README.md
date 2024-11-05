@@ -27,6 +27,9 @@
 
 # 使用方法
 1.下载release文件(选择您的电脑架构x64或x86)
+
 2.打开math tool installer.exe文件
+
 3.点击开始安装(您也可自定义安装路径)
+
 4.enjoy it!
