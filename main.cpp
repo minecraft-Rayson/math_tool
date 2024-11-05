@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "tools/about_pi.h"   //include circumference
+#include "tools/circumference.h"   //include circumference
 using namespace std;
 int main() 
 {
@@ -12,49 +12,39 @@ int main()
 	{
 		cout << "Please input your choice(1.circumference 2. pi 0.exit):";     //input choice
 		cin >> index;    //get user input
-		switch (index)
+		if (index == 0) //exit if
 		{
-		case 0:
-		{
-			exit;
+			break;
 			return 0;
 		}
-		case 1:
+		else if (index == 1) //circumference if
 		{
 			cout << "Choose 1.radius(r) 2.diameter(d):";
 			cin >> index;
-			switch (index)
+			if (index == 1)
 			{
-			case 1:
-			{
-				long double radius;
+				double radius;
 				cout << "Please input the radius:";
 				cin >> radius;
 				cout << "The circumference is:" << r(radius) << endl;
-				continue;
 			}
-			case 2:
+			else if (index == 2)
 			{
-				long double diameter;
+				double diameter;
 				cout << "Please input the diameter:";
 				cin >> diameter;
 				cout << "The circumference is:" << d(diameter) << endl;
-				continue;
-			}
 			}
 		}
-		case 2:
+		else if (index == 2)     // pi serch if
 		{
-			long double user;
+			double user;
 			cout << "Please input the number:";
 			cin >> user;
 			cout << "The pi is:" << piserch(user) << endl;
-			continue;
 		}
-		default:
-		{
+		else {         //error if
 			cout << "Error!" << endl;
-		}
 		}
 	}
 }
