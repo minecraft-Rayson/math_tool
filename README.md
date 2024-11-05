@@ -9,13 +9,3 @@
 2.score类由于技术难度大,预计需要2月以上
 
 3.main主文件已经更新了π查询,目前为功能键2
-#### 2024.11.4beta update
-1.将circumference类改为about_pi类
-
-2.将全局double类型改为long double类型,以适应高精度计算
-
-3.在about_pi.cpp文件中的pi值提高精度,因为更新2
-#### 2024.11.5beta update
-1.将main.cpp文件中的判断主函数改为switch case语句
-
-2.对所有代码进行检查,优化代码(指更新1)
