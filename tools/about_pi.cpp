@@ -1,23 +1,23 @@
 #include "about_pi.h"
 using namespace about_pi;
 
-// ¹¹Ôìº¯ÊıÊµÏÖ
+// æ„é€ å‡½æ•°å®ç°
 Pi::Pi() : pi(3.14159265358979323846) {
 }
 
-// ¼ÆËãÖ±¾¶
+// è®¡ç®—ç›´å¾„
 double Pi::d(double user_input) {
     double diameter = user_input * 2 * this->pi;
     return diameter;
 }
 
-// ËÑË÷¦ĞÖµ
+// æœç´¢Ï€å€¼
 double Pi::piserch(double user_input) {
     double circumference = user_input * this->pi;
     return circumference;
 }
 
-// ¼ÆËã°ë¾¶
+// è®¡ç®—åŠå¾„
 double Pi::r(double user_input) {
     double radius = user_input * user_input * this->pi;
     return radius;
