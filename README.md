@@ -36,7 +36,7 @@
 
 消息：apk文件由于java语言不熟悉，apk项目无限延长
 
-##### 2024.12.1-The biggest update!
+## 2024.12.1-The biggest update!
 #### 1.将main.cpp分离为english.json和main.cpp，方便维护（感谢https://github.com/nlohmann/json）
 
 2.解决了大部分bug
