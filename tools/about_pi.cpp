@@ -19,6 +19,6 @@ double Pi::piserch(double user_input) {
 
 // ¼ÆËã°ë¾¶
 double Pi::r(double user_input) {
-    double radius = user_input / (2 * this->pi);
+    double radius = user_input * user_input * this->pi;
     return radius;
 }

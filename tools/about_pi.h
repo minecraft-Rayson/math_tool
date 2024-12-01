@@ -1,3 +1,4 @@
+// about_pi.h
 #ifndef ABOUT_PI_H
 #define ABOUT_PI_H
 
@@ -5,13 +6,13 @@ namespace about_pi {
 
 class Pi {
 public:
-    Pi();  // ¹¹Ôìº¯ÊıÉùÃ÷
-    double r(double user_input);  // ¼ÆËã°ë¾¶
-    double d(double user_input);  // ¼ÆËãÖ±¾¶
-    double piserch(double user_input);  // ËÑË÷¦ĞÖµ£¨¼ÙÉèÎª¼ÆËãÖÜ³¤£©
+    Pi();  // æ„é€ å‡½æ•°å£°æ˜
+    double r(double user_input);  // è®¡ç®—åŠå¾„
+    double d(double user_input);  // è®¡ç®—ç›´å¾„
+    double piserch(double user_input);  // æœç´¢Ï€å€¼
 
 private:
-    double pi;  // ¦ĞÖµ
+    double pi;  // Ï€å€¼
 };
 
 }  // namespace about_pi
