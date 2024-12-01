@@ -1,5 +1,4 @@
 #include "about_pi.h"
-
 using namespace about_pi;
 
 // 构造函数实现
@@ -20,6 +19,6 @@ double Pi::piserch(double user_input) {
 
 // 计算半径
 double Pi::r(double user_input) {
-    double radius = user_input / (2 * this->pi);
+    double radius = user_input * user_input * this->pi;
     return radius;
 }

@@ -47,3 +47,6 @@
 /Math tool installer
 /math_tool.sln
 /f00e06ee4bfba15ade36b00c9b1c95765e37f9c2.gif@!web-article-pic.jpg
+.vscode/tasks.json
+.vscode/c_cpp_properties.json
+.vscode/launch.json
