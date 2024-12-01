@@ -11,7 +11,7 @@ int main()
     /*======================================================================*/
     for (;;)    //main loop
     {
-        cout << "Please input your choice(1.circumference 2. pi 0.exit):";     //input choice
+        cout << "Please input your choice(1.circumference 2. pi 0.exit):_\b";     //input choice
         cin >> index;    //get user input
         switch (index)
         {
@@ -22,7 +22,7 @@ int main()
         }
         case 1:
         {
-            cout << "Choose 1.radius(r) 2.diameter(d):";
+            cout << "Choose 1.radius(r) 2.diameter(d):_\b";
             cin >> index;
             switch (index)
             {
@@ -57,7 +57,7 @@ int main()
         }
         default:
         {
-            cout << "Error!" << endl;
+            cout << "\aError!" << endl;
         }
         }
     }
