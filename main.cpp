@@ -1,18 +1,26 @@
 #include <iostream>
 #include <cmath>
-#include "tools/about_pi.h"   //include circumference
+#include <fstream>
+#include <string>
+#include "lib/json.hpp"  // 包含 JSON 解析库
+#include "tools/about_pi.h"
+
 using namespace std;
+using json = nlohmann::json;
+
+// 函数声明
+string getLocalizedString(const string& key);
 
 int main() 
 {
-    int index;    //set user input 
-    cout << "Hello, Welcome to use math tool" << endl;    //welcome sentence
-    cout << "Make with zk stdio!" << endl;    //welcome sentence
+    int index;    // set user input 
+    cout << getLocalizedString("welcome_message") << endl;    // welcome sentence
+    cout << getLocalizedString("make_with") << endl;    // welcome sentence
     /*======================================================================*/
-    for (;;)    //main loop
+    for (;;)    // main loop
     {
-        cout << "Please input your choice(1.circumference 2. pi 0.exit):_\b";     //input choice
-        cin >> index;    //get user input
+        cout << getLocalizedString("input_choice") << "\b";     // input choice
+        cin >> index;    // get user input
         switch (index)
         {
         case 0:
@@ -22,26 +30,26 @@ int main()
         }
         case 1:
         {
-            cout << "Choose 1.radius(r) 2.diameter(d):_\b";
+            cout << getLocalizedString("choose_radius_diameter") << "\b";
             cin >> index;
             switch (index)
             {
             case 1:
             {
                 long double radius;
-                cout << "Please input the radius:";
+                cout << getLocalizedString("input_radius");
                 cin >> radius;
                 about_pi::Pi pi_instance;  // 创建 Pi 类的实例
-                cout << "The circumference is:" << pi_instance.r(radius) << endl;  // 通过实例调用 r 方法
+                cout << getLocalizedString("circumference_result") << pi_instance.r(radius) << endl;  // 通过实例调用 r 方法
                 continue;
             }
             case 2:
             {
                 long double diameter;
-                cout << "Please input the diameter:";
+                cout << getLocalizedString("input_diameter");
                 cin >> diameter;
                 about_pi::Pi pi_instance;  // 创建 Pi 类的实例
-                cout << "The circumference is:" << pi_instance.d(diameter) << endl;  // 通过实例调用 d 方法
+                cout << getLocalizedString("circumference_result") << pi_instance.d(diameter) << endl;  // 通过实例调用 d 方法
                 continue;
             }
             }
@@ -49,16 +57,31 @@ int main()
         case 2:
         {
             long double user;
-            cout << "Please input the number:";
+            cout << getLocalizedString("input_number");
             cin >> user;
-			about_pi::Pi pi_instance;  // 创建 Pi 类的实例
-            cout << "The pi is:" << pi_instance.piserch(user) << endl;
+            about_pi::Pi pi_instance;  // 创建 Pi 类的实例
+            cout << getLocalizedString("pi_result") << pi_instance.piserch(user) << endl;
             continue;
         }
         default:
         {
-            cout << "\aError!" << endl;
+            cout << "\a" << getLocalizedString("error_message") << endl;
         }
         }
     }
+}
+
+// 函数定义
+string getLocalizedString(const string& key) {
+    static json localizationData;
+    if (localizationData.empty()) {
+        ifstream file("language/english.json");
+        if (file.is_open()) {
+            file >> localizationData;
+        } else {
+            cerr << "Failed to open localization file." << endl;
+            return key;  // 返回键本身作为默认值
+        }
+    }
+    return localizationData.value(key, key);  // 返回键对应的值，如果不存在则返回键本身
 }
