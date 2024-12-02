@@ -10,6 +10,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 3.点击开始安装(您也可自定义安装路径)
 
 4.enjoy it!
+# update log
 ### 2024.10.28update
 1.主函数框架完成
 
