@@ -52,7 +52,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 2.解决了大部分bug
 
-### 2024.12.2-release 0.9.0 update(birthday update)
+## 2024.12.2-[release 0.9.0 update(birthday update)](https://github.com/minecraft-Rayson/math_tool/releases/tag/v0.9.x)
 #### Today is my mother's birthday, so I will release a new version of the program.
 1.发布第二个版本-0.9.0
 
