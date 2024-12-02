@@ -55,7 +55,7 @@ int main()
                 cout << getLocalizedString("input_radius");
                 cin >> radius;
                 about_pi::Pi pi_instance;  // 创建 Pi 类的实例
-                cout << getLocalizedString("circumference_result") << pi_instance.r(radius) << endl;  // 通过实例调用 r 方法
+                cout << getLocalizedString("area_result") << pi_instance.r(radius) << endl;  // 通过实例调用 r 方法
                 continue;
             }
             case 2:
@@ -64,7 +64,12 @@ int main()
                 cout << getLocalizedString("input_diameter");
                 cin >> diameter;
                 about_pi::Pi pi_instance;  // 创建 Pi 类的实例
-                cout << getLocalizedString("circumference_result") << pi_instance.d(diameter) << endl;  // 通过实例调用 d 方法
+                cout << getLocalizedString("area_result") << pi_instance.d(diameter) << endl;  // 通过实例调用 d 方法
+                continue;
+            }
+            default:
+            {
+                cout << "\a" << getLocalizedString("error_message") << endl;
                 continue;
             }
             }
@@ -90,7 +95,7 @@ int main()
 string getLocalizedString(const string& key) {
     static json localizationData;
     if (localizationData.empty()) {
-        ifstream file("language/english.json");
+        ifstream file("language\\english.json");
         if (file.is_open()) {
             file >> localizationData;
         } else {

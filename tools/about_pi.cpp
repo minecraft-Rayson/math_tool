@@ -7,8 +7,9 @@ Pi::Pi() : pi(3.14159265358979323846) {
 
 // 计算直径
 double Pi::d(double user_input) {
-    double diameter = user_input * 2 * this->pi;
-    return diameter;
+    double r = user_input / 2;
+    double end = r * r * this->pi;
+    return end;
 }
 
 // 搜索π值

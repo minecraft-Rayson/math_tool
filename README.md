@@ -51,3 +51,17 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 #### 1.将main.cpp分离为english.json和main.cpp，方便维护（感谢[json](https://github.com/nlohmann/json)）
 
 2.解决了大部分bug
+
+### 2024.12.2-release 0.9.0 update(birthday update)
+#### Today is my mother's birthday, so I will release a new version of the program.
+1.发布第二个版本-0.9.0
+
+### 更新内容如下：
+
+#### 1.作者将改为Zhang Ruishen
+
+2.优化了部分代码
+
+3.分离语言文件(见2024.12.1-update)
+
+#### 4.为建立代码安全性，即日起apache license 2.0将生效，且将多次强调版权

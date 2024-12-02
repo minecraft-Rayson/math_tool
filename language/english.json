@@ -1,10 +1,10 @@
 {
     "welcome_message": "Hello, Welcome to use math tool",
-    "make_with": "Make with zk stdio!",
-    "input_choice": "Please input your choice(1.circumference 2. pi 0.exit):_",
+    "make_with": "Make with Zhang Ruishen!",
+    "input_choice": "Please input your choice(1.area 2.pi 0.exit):_",
     "choose_radius_diameter": "Choose 1.radius(r) 2.diameter(d):_",
     "input_radius": "Please input the radius:",
-    "circumference_result": "The circumference is:",
+    "area_result": "The area is:",
     "input_diameter": "Please input the diameter:",
     "input_number": "Please input the number:",
     "pi_result": "The pi is:",
