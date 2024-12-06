@@ -19,3 +19,6 @@ add_executable(math_tool
 
 # 添加JSON库
 target_include_directories(math_tool PRIVATE lib)
+
+# 如果有其他库或依赖项，可以在这里添加
+# target_link_libraries(math_tool 其他库)
