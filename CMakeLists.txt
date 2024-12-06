@@ -1,22 +1,24 @@
 cmake_minimum_required(VERSION 3.10)
 project(MathTool)
 
-# 设置 C++ 标准
-set(CMAKE_CXX_STANDARD 14)
+# 设置C++标准
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 查找依赖库
-find_package(nlohmann_json REQUIRED)
-
-# 包含头文件路径
+# 包含目录
 include_directories(
-    ${nlohmann_json_INCLUDE_DIRS}
-    ./tools
-    ./lib
+    ${CMAKE_SOURCE_DIR}/lib
+    ${CMAKE_SOURCE_DIR}/tools
 )
 
 # 添加可执行文件
-add_executable(math_tool main.cpp)
+add_executable(math_tool
+    main.cpp
+    tools/about_pi.cpp
+)
 
-# 链接库
-target_link_libraries(math_tool ${nlohmann_json_LIBRARIES})
+# 添加JSON库
+target_include_directories(math_tool PRIVATE lib)
+
+# 如果有其他库或依赖项，可以在这里添加
+# target_link_libraries(math_tool 其他库)
