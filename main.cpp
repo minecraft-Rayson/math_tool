@@ -19,6 +19,7 @@
 #include <string>
 #include "lib/json.hpp"  // 包含 JSON 解析库
 #include "tools/about_pi.h"
+#include "tools/score.h"
 
 using namespace std;
 using json = nlohmann::json;
@@ -82,6 +83,18 @@ int main()
             about_pi::Pi pi_instance;  // 创建 Pi 类的实例
             cout << getLocalizedString("pi_result") << pi_instance.piserch(user) << endl;
             continue;
+        }
+        case 3:
+        {
+            int one_up,one_down,two_up,two_down;
+            about_score::score score_instance;  // 创建 score 类的实例
+            cin >> one_up >> two_up;
+            cin >> one_down >> two_down;
+            int* end;
+            end = score_instance.addition(one_up,two_up,one_down,two_down);
+            for(int i = 0; i < 2; i++){
+                cout << *(end+i) << " ";
+            };
         }
         default:
         {
