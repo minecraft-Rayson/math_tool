@@ -66,3 +66,9 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 3.分离语言文件(见2024.12.1-update)
 
 #### 4.为建立代码安全性，即日起apache license 2.0将生效，且将多次强调版权
+
+### 2024.12.5~2024.12.17 beta update
+
+1.更新了score函数的addition函数
+
+注意：本更新充满bug，不建议使用，推荐切回v0.9.x标签或[#3458360](https://github.com/minecraft-Rayson/math_tool/commit/3458360eda20a4c24db679eb6aa87211b17ba79a)
