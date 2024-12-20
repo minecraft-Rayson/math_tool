@@ -52,4 +52,5 @@ int zhishu(int n){
         }
         return 413;
     }
+    return 412;
 }

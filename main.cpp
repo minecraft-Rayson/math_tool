@@ -87,7 +87,7 @@ int main()
         }
         case 3:
         {
-            int one_up,one_down,two_up,two_down, cnt;
+            int one_up,one_down,two_up,two_down;
             about_score::score score_instance;  // 创建 score 类的实例
             rof::rof rof_instance;
             cout << getLocalizedString("input_score_numerator") << "\b\b\b";
