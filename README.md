@@ -73,7 +73,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 注意：本更新充满bug，不建议使用，推荐切回v0.9.x标签或[#3458360](https://github.com/minecraft-Rayson/math_tool/commit/3458360eda20a4c24db679eb6aa87211b17ba79a)
 
-### 2024.12.20 beta update   
+### 2024.12.20 beta update   [#2bf9655c](https://github.com/minecraft-Rayson/math_tool/commit/2bf9655cec2114f2c18d7e70fdbe204fea08aa30)
 
 1.完成了约分函数(ROF),仍有bug
 
