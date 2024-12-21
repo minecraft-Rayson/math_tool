@@ -2,11 +2,11 @@
 #include "ROF.h"
 #include <iostream>
 #include <cmath>
-using namespace rof;
+using namespace score_rof;
 
 int zhishu(int n);
 
-int* rof::rof::ROF(int up, int down) {
+int* rof::ROF(int up, int down) {
     for (int i = 2;; i++) {
         if ((up + 1 == down) || (up - 1 == down)) {      // 相邻互质
             break;

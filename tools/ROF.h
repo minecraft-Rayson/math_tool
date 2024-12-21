@@ -2,7 +2,7 @@
 #ifndef ROF_H
 #define ROF_H
 
-namespace rof{
+namespace score_rof{
 
 class rof{
 public:
