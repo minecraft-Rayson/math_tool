@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories(
     ${CMAKE_SOURCE_DIR}/lib
     ${CMAKE_SOURCE_DIR}/tools
+    ${CMAKE_SOURCE_DIR}/language
 )
 
 # 添加可执行文件
