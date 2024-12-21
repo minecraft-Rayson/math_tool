@@ -89,7 +89,7 @@ int main()
         {
             int one_up,one_down,two_up,two_down;
             about_score::score score_instance;  // 创建 score 类的实例
-            rof::rof rof_instance;
+            score_rof::rof rof_instance;
             cout << getLocalizedString("input_score_numerator") << "\b\b\b";
             cin >> one_up >> two_up;
             cout << getLocalizedString("input_score_denominator") << "\b\b\b";
