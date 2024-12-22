@@ -1,4 +1,5 @@
 // about_pi.h
+#pragma once
 #ifndef ABOUT_PI_H
 #define ABOUT_PI_H
 

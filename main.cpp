@@ -20,6 +20,7 @@
 #include "lib/json.hpp"  // 包含 JSON 解析库
 #include "tools/about_pi.h"
 #include "tools/score.h"
+#include "tools/ROF.h"
 
 using namespace std;
 using json = nlohmann::json;
@@ -88,13 +89,22 @@ int main()
         {
             int one_up,one_down,two_up,two_down;
             about_score::score score_instance;  // 创建 score 类的实例
+            score_rof::rof rof_instance;
+            cout << getLocalizedString("input_score_numerator") << "\b\b\b";
             cin >> one_up >> two_up;
+            cout << getLocalizedString("input_score_denominator") << "\b\b\b";
             cin >> one_down >> two_down;
+            int* two;
             int* end;
-            end = score_instance.addition(one_up,two_up,one_down,two_down);
-            for(int i = 0; i < 2; i++){
-                cout << *(end+i) << " ";
-            };
+            two = score_instance.addition(one_up,two_up,one_down,two_down);
+            end = rof_instance.ROF(two[0], two[1]);
+            cout << end[0]
+                 << endl
+                 << "--"
+                 << endl
+                 << end[1] 
+                 << endl;
+            continue;
         }
         default:
         {

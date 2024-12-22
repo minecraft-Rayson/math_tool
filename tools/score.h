@@ -1,4 +1,5 @@
 // score.h
+#pragma once
 #ifndef SCORE_H
 #define SCORE_H
 
