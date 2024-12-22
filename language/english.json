@@ -8,5 +8,7 @@
     "input_diameter": "Please input the diameter:",
     "input_number": "Please input the number:",
     "pi_result": "The pi is:",
+    "input_score_numerator": "Please input the score numerator(example:1 1):_ _",
+    "input_score_denominator": "Please input the score denominator(example:1 1):_ _",
     "error_message": "Error!"
 }
