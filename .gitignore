@@ -54,3 +54,6 @@
 out/language/english.json
 out/*
 build/*
+/x64/Release
+/math_tool/x64/Release/math_tool.tlog
+/math_tool/x64/Release
