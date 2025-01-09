@@ -1,6 +1,9 @@
 # Made with Zhang Ruishen, China
 # Math Tool
 
+
+# Warning: The code is transfer, the new repositories is [math_tool_ui](https://github.com/minecraft-Rayson/math_tool_ui.git)
+
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE.txt) file for details.
 # 使用方法
 1.下载[release](https://github.com/minecraft-Rayson/math_tool/releases)文件(选择您的电脑架构x64或x86)
@@ -78,3 +81,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 1.完成了约分函数(ROF),仍有bug
 
 2.完成了分数加法的主函数(main)
+
+### 2025.1.9 Transfer code
+
+Warning: The code is transfer, the new repositories is [math_tool_ui](https://github.com/minecraft-Rayson/math_tool_ui.git)
